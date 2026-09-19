@@ -9,11 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ============ NAVIGATION ============ -->
+  <!-- ============ HEADER / PRIMARY NAVIGATION ============ -->
   <header class="site-header">
     <div class="wrap nav">
       <a href="index.html" class="logo">EXCA<span>VATE</span></a>
@@ -85,19 +85,27 @@
 
   <!-- ============ HOW WE WORK ============
        (Previously unclosed — restored as a proper two-column
-       section, the second column filled with the ISO/reporting
-       detail that had nowhere to live.) -->
+       section, paired with a photo of a restored former site to
+       illustrate the rehabilitation commitment described in the text.) -->
   <section class="split">
     <div class="wrap grid-2">
       <div>
         <div class="eyebrow">How we work</div>
         <h2>One contract, one point of contact.</h2>
         <p>Most partners engage Excavate for a single stage — processing, or logistics — but the same project manager stays assigned from survey through closure, so nothing gets lost between handoffs.</p>
+        <p>Every service is scoped against ISO 14001 environmental standards and reported monthly in plain, auditable terms — including the rehabilitation work pictured here.</p>
         <a href="contact.html" class="btn btn-secondary">Discuss a project</a>
       </div>
-      <div class="card">
-        <h3>Reporting standard</h3>
-        <p>Every service is scoped against ISO 14001 environmental standards and reported monthly in plain, auditable terms.</p>
+      <div class="hero-media">
+        <picture>
+          <img src="assets/scenery-1280.jpg"
+               srcset="assets/scenery-640.jpg 640w,
+                       assets/scenery-1280.jpg 1280w,
+                       assets/scenery-1920.jpg 1920w"
+               sizes="(min-width: 900px) 480px, 90vw"
+               alt="Former mine site restored to natural grassland and woodland"
+               width="1280" height="960" loading="lazy">
+        </picture>
       </div>
     </div>
   </section>
