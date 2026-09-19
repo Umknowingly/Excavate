@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services — Excavate</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Excavate</title>
+  <meta name="description" content="From first survey to final rehabilitation, Excavate manages every stage of a mining operation under one roof.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
     <div class="wrap nav">
-      <a href="../index.html" class="logo">EXCA<span>VATE</span></a>
+      <a href="index.html" class="logo">EXCA<span>VATE</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../Pages/Services.html" aria-current="page">Services</a></li>
-        <li><a href="../Pages/Projects.html">Projects</a></li>
-        <li><a href="../Pages/Careers.html">Careers</a></li>
-        <li><a href="../Pages/Contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <a href="../Pages/Contact.html" class="nav-cta">Get a quote</a>
+      <a href="contact.html" class="nav-cta">Get a quote</a>
     </div>
   </header>
 
+  <!-- ============ PAGE HEADER ============ -->
   <section class="page-header">
     <div class="wrap">
       <div class="eyebrow">What we do</div>
@@ -30,6 +43,7 @@
     </div>
   </section>
 
+  <!-- ============ SERVICE CARDS ============ -->
   <section>
     <div class="wrap">
       <div class="grid-3">
@@ -69,16 +83,26 @@
 
   <div class="strata-rule"></div>
 
+  <!-- ============ HOW WE WORK ============
+       (Previously unclosed — restored as a proper two-column
+       section, the second column filled with the ISO/reporting
+       detail that had nowhere to live.) -->
   <section class="split">
-    <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+    <div class="wrap grid-2">
       <div>
         <div class="eyebrow">How we work</div>
         <h2>One contract, one point of contact.</h2>
         <p>Most partners engage Excavate for a single stage — processing, or logistics — but the same project manager stays assigned from survey through closure, so nothing gets lost between handoffs.</p>
-        <p>Every service is scoped against ISO 14001 environmental standards and reported monthly in plain, auditable terms.</p>
         <a href="contact.html" class="btn btn-secondary">Discuss a project</a>
       </div>
+      <div class="card">
+        <h3>Reporting standard</h3>
+        <p>Every service is scoped against ISO 14001 environmental standards and reported monthly in plain, auditable terms.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- ============ CTA ============ -->
   <section class="cta">
     <div class="wrap">
       <div class="eyebrow">Get started</div>
@@ -88,7 +112,8 @@
     </div>
   </section>
 
-  <footer>
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
     <div class="wrap footer-inner">
       <div>© 2026 Excavate. All rights reserved.</div>
       <ul class="footer-links">
