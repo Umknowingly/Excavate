@@ -12,11 +12,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Single external stylesheet shared by every page -->
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ============ NAVIGATION ============ -->
+  <!-- ============ HEADER / PRIMARY NAVIGATION ============ -->
   <header class="site-header">
     <div class="wrap nav">
       <a href="index.html" class="logo">EXCA<span>VATE</span></a>
@@ -52,21 +52,15 @@
         </div>
       </div>
 
-      <!-- Responsive image: a taller crop is served on narrow screens, a wider
-           crop on desktop, using art-directed <source> elements. -->
+      <!-- Responsive image: two real resolutions of the same photo so
+           narrow screens don't download the full-size file. -->
       <div class="hero-media">
         <picture>
-          <source media="(min-width: 601px)"
-                  srcset="https://picsum.photos/seed/excavate-hero-wide/900/675 900w,
-                          https://picsum.photos/seed/excavate-hero-wide/1400/1050 1400w"
-                  sizes="(min-width: 900px) 480px, 45vw">
-          <source media="(max-width: 600px)"
-                  srcset="https://picsum.photos/seed/excavate-hero-tall/800/900 800w,
-                          https://picsum.photos/seed/excavate-hero-tall/1200/1350 1200w"
-                  sizes="100vw">
-          <img src="https://picsum.photos/seed/excavate-hero-wide/900/675"
-               alt="Open-pit mining site with heavy extraction equipment"
-               width="900" height="675" loading="lazy">
+          <img src="assets/truck-684.jpg"
+               srcset="assets/truck-400.jpg 400w, assets/truck-684.jpg 684w"
+               sizes="(min-width: 900px) 480px, 45vw"
+               alt="Two haul trucks moving ore at an open-pit mining site"
+               width="684" height="448" loading="lazy">
         </picture>
       </div>
     </div>
@@ -118,11 +112,11 @@
       </div>
       <div class="hero-media">
         <picture>
-          <source media="(min-width: 601px)"
-                  srcset="https://picsum.photos/seed/excavate-processing/900/700 900w">
-          <img src="https://picsum.photos/seed/excavate-processing/900/700"
-               alt="On-site mineral processing and crushing plant"
-               width="900" height="700" loading="lazy">
+          <img src="assets/mine-738.jpg"
+               srcset="assets/mine-420.jpg 420w, assets/mine-738.jpg 738w"
+               sizes="(min-width: 900px) 480px, 45vw"
+               alt="Aerial view of an on-site crushing and processing plant"
+               width="738" height="414" loading="lazy">
         </picture>
       </div>
     </div>
