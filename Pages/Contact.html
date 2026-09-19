@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Excavate</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Excavate</title>
+  <meta name="description" content="Get in touch with Excavate about supply enquiries, project proposals, or careers.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
     <div class="wrap nav">
-      <a href="../index.html" class="logo">EXCA<span>VATE</span></a>
+      <a href="index.html" class="logo">EXCA<span>VATE</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="careers.html">Careers</a></li>
@@ -24,6 +34,7 @@
     </div>
   </header>
 
+  <!-- ============ PAGE HEADER ============ -->
   <section class="page-header">
     <div class="wrap">
       <div class="eyebrow">Get in touch</div>
@@ -32,8 +43,10 @@
     </div>
   </section>
 
+  <!-- ============ FORM andCONTACT DETAILS ============ -->
   <section>
-    <div class="wrap" style="display:grid; grid-template-columns:1.2fr 1fr; gap:64px; align-items:start;">
+    <div class="wrap grid-2">
+      <!-- Enquiry form -->
       <form>
         <div class="form-grid">
           <div>
@@ -63,13 +76,13 @@
             <textarea id="message" name="message" placeholder="Tell us about your site, timeline, or role of interest."></textarea>
           </div>
           <div class="full">
-            <button type="submit" class="btn btn-primary" style="border:none; cursor:pointer;">Send message</button>
+            <button type="submit" class="btn btn-primary">Send message</button>
           </div>
         </div>
       </form>
 
       <div>
-        <h2 style="margin-bottom:24px;">Reach us directly</h2>
+        <h2 style="margin-bottom: var(--space-3);">Reach us directly</h2>
         <ul class="info-list">
           <li><span class="k">Operations</span><span>operations@excavate.example</span></li>
           <li><span class="k">Careers</span><span>careers@excavate.example</span></li>
@@ -81,11 +94,12 @@
     </div>
   </section>
 
-  <footer>
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
     <div class="wrap footer-inner">
       <div>© 2026 Excavate. All rights reserved.</div>
       <ul class="footer-links">
-        <li><a href="Services.html">Services</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="careers.html">Careers</a></li>
         <li><a href="contact.html">Contact</a></li>
