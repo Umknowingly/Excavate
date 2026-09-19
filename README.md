@@ -5,18 +5,17 @@ resources company, built as part of the WEDE5020 Portfolio of Evidence.
 
 ## File structure
 
-```
 ├── index.html
 ├── services.html
 ├── careers.html
 ├── projects.html
 ├── contact.html
-├── styles.css              ← single external stylesheet, linked from every page
+├── styles.css             
 ├── assets/
-│   ├── truck-400.jpg / truck-684.jpg      ← home page hero
-│   ├── mine-420.jpg / mine-738.jpg        ← home page, "Since 1984" section
-│   ├── crane-380.jpg / crane-624.jpg      ← careers page header
-│   └── scenery-640/1280/1920.jpg          ← services page, rehabilitation
+│   ├── truck.jpg      
+│   ├── mine.jpg       
+│   ├── crane.jpg      
+│   └── scenery.jpg          
 ├── README.md
 └── LICENSE
 
