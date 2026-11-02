@@ -672,4 +672,133 @@ button:focus-visible,
     transition-duration: 0.001ms !important;
     animation-duration: 0.001ms !important;
   }
+
+  /* Final Additions for Part 3 */
+
+/* Form Error States */
+input.error, textarea.error, select.error {
+  border-color: var(--rust) !important;
+  background-color: #fff5f5;
+}
+
+/* Lightbox Modal */
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-content img {
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  border: 3px solid var(--paper);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -30px;
+  right: -10px;
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.lightbox-close:hover {
+  color: var(--rust);
+}
+
+/* Accordion */
+.accordion-item {
+  border: 1px solid var(--line);
+  margin-bottom: var(--space-2);
+  background: var(--white);
+}
+
+.accordion-header {
+  background: var(--paper-dark);
+  padding: var(--space-3);
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.accordion-header:hover, .accordion-header.active {
+  background: var(--line);
+}
+
+.accordion-header::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--rust);
+}
+
+.accordion-header.active::after {
+  content: '−';
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 var(--space-3);
+}
+
+.accordion-content p {
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Search and Filter Controls */
+.filter-controls {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.filter-controls input, .filter-controls select {
+  padding: 10px;
+  border: 1px solid var(--line);
+  flex: 1;
+  min-width: 200px;
+}
 }

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   forms.forEach(form => {
     form.addEventListener('submit', function(e) {
-      e.preventDefault(); // Prevent default submission for AJAX
+      e.preventDefault(); 
       
       let isValid = true;
       const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
@@ -66,8 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return /^(\+27|0)[6-8][0-9]{8}$/.test(phone.replace(/\s/g, ''));
   }
 
-  /*  Dynamic Content for the search and filter functionality on the Projects page
-    */
+  /*  Dynamic Content for the search and filter functionality on the Projects page */
   const searchInput = document.getElementById('project-search');
   const filterSelect = document.getElementById('project-filter');
   const projectCards = document.querySelectorAll('.project-card');
@@ -95,8 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filterSelect.addEventListener('change', filterProjects);
   }
 
-  /* Interactive Elements for the gallery lightbox functionality on the Projects page
-  */
+  /* Interactive Elements for the gallery lightbox functionality on the Projects page */
   const galleryImages = document.querySelectorAll('.gallery-item img');
   
   if (galleryImages.length > 0) {
