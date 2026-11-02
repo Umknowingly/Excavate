@@ -66,9 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
     return /^(\+27|0)[6-8][0-9]{8}$/.test(phone.replace(/\s/g, ''));
   }
 
-  /* ==========================================
-     2. Dynamic Content - Search & Filter
-     ========================================== */
+  /*  Dynamic Content for the search and filter functionality on the Projects page
+    */
   const searchInput = document.getElementById('project-search');
   const filterSelect = document.getElementById('project-filter');
   const projectCards = document.querySelectorAll('.project-card');
@@ -96,9 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
     filterSelect.addEventListener('change', filterProjects);
   }
 
-  /* ==========================================
-     3. Interactive Elements - Gallery Lightbox
-     ========================================== */
+  /* Interactive Elements for the gallery lightbox functionality on the Projects page
+  */
   const galleryImages = document.querySelectorAll('.gallery-item img');
   
   if (galleryImages.length > 0) {
@@ -130,9 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ==========================================
-     4. Interactive Elements - Accordion
-     ========================================== */
+  /*  Interactive Elements for the accordion functionality on the Projects page */
   const accordionHeaders = document.querySelectorAll('.accordion-header');
   
   accordionHeaders.forEach(header => {
