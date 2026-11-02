@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
+  <script src="../js/interactivity.js" defer></script>
 </head>
 <body>
 
@@ -46,39 +47,40 @@
   <!-- ============ FORM + DIRECT CONTACT DETAILS ============ -->
   <section>
     <div class="wrap grid-2">
-      <form>
-        <div class="form-grid">
-          <div>
-            <label for="name">Full name</label>
-            <input id="name" name="name" type="text" placeholder="Jane Dlamini">
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="jane@company.com">
-          </div>
-          <div>
-            <label for="topic">Enquiry type</label>
-            <select id="topic" name="topic">
-              <option>Supply &amp; sourcing</option>
-              <option>Project proposal</option>
-              <option>Careers</option>
-              <option>Media &amp; press</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div>
-            <label for="company">Company (optional)</label>
-            <input id="company" name="company" type="text" placeholder="Company name">
-          </div>
-          <div class="full">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us about your site, timeline, or role of interest."></textarea>
-          </div>
-          <div class="full">
-            <button type="submit" class="btn btn-primary">Send message</button>
-          </div>
-        </div>
-      </form>
+      <form data-validate>
+  <div class="form-grid">
+    <div>
+      <label for="name">Full name *</label>
+      <input id="name" name="name" type="text" placeholder="Jane Dlamini" required>
+    </div>
+    <div>
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" placeholder="jane@company.com" required>
+    </div>
+    <div>
+      <label for="phone">Phone Number *</label>
+      <input id="phone" name="phone" type="tel" placeholder="082 123 4567" required>
+    </div>
+    <div>
+      <label for="topic">Enquiry type</label>
+      <select id="topic" name="topic" required>
+        <option value="">Select an option...</option>
+        <option>Supply &amp; sourcing</option>
+        <option>Project proposal</option>
+        <option>Careers</option>
+        <option>Media &amp; press</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="full">
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" placeholder="Tell us about your site, timeline, or role of interest." required></textarea>
+    </div>
+    <div class="full">
+      <button type="submit" class="btn btn-primary">Send message</button>
+    </div>
+  </div>
+</form>
 
       <div>
         <h2 style="margin-bottom: var(--space-3);">Reach us directly</h2>
