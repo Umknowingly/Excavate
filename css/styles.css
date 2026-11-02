@@ -129,11 +129,7 @@ section {
   gap: var(--space-2);
 }
 
-/* -------------------------------------------------------------
-   5. HEADER & NAVIGATION
-   Uses a checkbox-driven toggle (no JavaScript needed) so the
-   menu collapses below the tablet breakpoint. See item 18/19.
-   ------------------------------------------------------------- */
+/* ------ HEADER & NAVIGATION ------- */
 .site-header {
   position: sticky;
   top: 0;
@@ -228,9 +224,7 @@ section {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* -------------------------------------------------------------
-   6. BUTTONS
-   ------------------------------------------------------------- */
+/* ----------- BUTTONS ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -269,11 +263,7 @@ section {
   border-color: var(--ink);
 }
 
-/* -------------------------------------------------------------
-   7. HERO
-   Two columns on desktop: copy on the left, a site photograph
-   on the right using <picture> with art-directed crops.
-   ------------------------------------------------------------- */
+/* -----HERO ------ */
 .hero .wrap {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -289,11 +279,7 @@ section {
   object-fit: cover;
 }
 
-/* -------------------------------------------------------------
-   8. SECTION HEAD / EYEBROW
-   Eyebrow uses a short rule + sentence case rather than a
-   tracked-out all-caps label.
-   ------------------------------------------------------------- */
+/* --------SECTION HEAD ---------- */
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -328,11 +314,7 @@ section {
   flex-wrap: wrap;
 }
 
-/* -------------------------------------------------------------
-   9. CARDS
-   A rust top-edge stands in for the generic soft-shadow /
-   rounded-corner treatment — nods to a cut rock face.
-   ------------------------------------------------------------- */
+/* ---------- CARDS ----------- */
 .card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -358,11 +340,7 @@ section {
   margin-bottom: var(--space-1);
 }
 
-/* -------------------------------------------------------------
-   10. STRATA RULE
-   A repeating gradient standing in for a rock-strata cross
-   section — used as a section divider instead of a plain <hr>.
-   ------------------------------------------------------------- */
+/* ------RULE------------ */
 .strata-rule {
   height: 10px;
   background: repeating-linear-gradient(
