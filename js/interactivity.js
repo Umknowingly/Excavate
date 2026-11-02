@@ -1,13 +1,13 @@
-/*Excavate - Interactivity & Form Validation */
+/* Excavate - Interactivity & Form Validation */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* Form Validation */
+  /* 1. Form Validation & Processing */
   const forms = document.querySelectorAll('form[data-validate]');
   
   forms.forEach(form => {
     form.addEventListener('submit', function(e) {
-      e.preventDefault(); 
+      e.preventDefault(); // Prevent default submission for AJAX
       
       let isValid = true;
       const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (isValid) {
-        // Simulate the submission
+        // Simulate AJAX submission
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
@@ -62,11 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function validatePhone(phone) {
-    // validation for South African phone format
+    // Basic SA phone format validation (e.g., 0821234567 or +27821234567)
     return /^(\+27|0)[6-8][0-9]{8}$/.test(phone.replace(/\s/g, ''));
   }
 
-  /*  Dynamic Content for the search and filter functionality on the Projects page */
+  /* 2. Dynamic Content - Search & Filter */
   const searchInput = document.getElementById('project-search');
   const filterSelect = document.getElementById('project-filter');
   const projectCards = document.querySelectorAll('.project-card');
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filterSelect.addEventListener('change', filterProjects);
   }
 
-  /* Interactive Elements for the gallery lightbox functionality on the Projects page */
+  /* 3. Interactive Elements - Gallery Lightbox */
   const galleryImages = document.querySelectorAll('.gallery-item img');
   
   if (galleryImages.length > 0) {
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /*  Interactive Elements for the accordion functionality on the Projects page */
+  /* 4. Interactive Elements - Accordion */
   const accordionHeaders = document.querySelectorAll('.accordion-header');
   
   accordionHeaders.forEach(header => {
