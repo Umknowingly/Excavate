@@ -1,9 +1,4 @@
-/* -------------------------------------------------------------
-   1. DESIGN TOKENS
-   Palette is drawn from the subject matter: quarried stone,
-   oxidised iron ore and safety-equipment amber, rather than a
-   generic SaaS palette.
-   ------------------------------------------------------------- */
+
 :root {
   /* colour */
   --ink: #211f1c;          /* near-black warm charcoal — primary text */
