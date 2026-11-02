@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services — Excavate</title>
   <meta name="description" content="From first survey to final rehabilitation, Excavate manages every stage of a mining operation under one roof.">
+  <meta name="keywords" content="mining services, extraction, processing, logistics, site survey, safety consulting, land rehabilitation, ISO 14001">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
+  
+  <!-- JavaScript for interactivity -->
+  <script src="../js/interactivity.js" defer></script>
 </head>
 <body>
 
-  <!-- ============ NAVIGATION ============ -->
+  <!-- NAVIGATION -->
   <header class="site-header">
     <div class="wrap nav">
       <a href="../index.html" class="logo">EXCA<span>VATE</span></a>
@@ -34,7 +38,7 @@
     </div>
   </header>
 
-  <!-- ============ PAGE HEADER ============ -->
+  <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="wrap">
       <div class="eyebrow">What we do</div>
@@ -43,7 +47,7 @@
     </div>
   </section>
 
-  <!-- ============ SERVICE CARDS ============ -->
+  <!-- SERVICE CARDS -->
   <section>
     <div class="wrap">
       <div class="grid-3">
@@ -83,7 +87,7 @@
 
   <div class="strata-rule"></div>
 
-  <!-- ============ HOW WE WORK ============ -->
+  <!-- HOW WE WORK / ACCORDION -->
   <section class="split">
     <div class="wrap grid-2">
       <div>
@@ -91,14 +95,34 @@
         <h2>One contract, one point of contact.</h2>
         <p>Most partners engage Excavate for a single stage — processing, or logistics — but the same project manager stays assigned from survey through closure, so nothing gets lost between handoffs.</p>
         <p>Every service is scoped against ISO 14001 environmental standards and reported monthly in plain, auditable terms — including the rehabilitation work pictured here.</p>
-        <a href="contact.html" class="btn btn-secondary">Discuss a project</a>
+        
+        <!-- Accordion Component -->
+        <div style="margin-top: var(--space-4);">
+          <div class="accordion-item">
+            <div class="accordion-header">What is your safety protocol?</div>
+            <div class="accordion-content">
+              <p>Every role begins with the same safety induction, regardless of seniority. We conduct independent safety audits and training programmes drawing on our own site protocols.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">How is rehabilitation handled?</div>
+            <div class="accordion-content">
+              <p>Land restoration and closure planning are built into every contract from the first day of operation rather than added at the end.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Do you handle logistics?</div>
+            <div class="accordion-content">
+              <p>Yes. We manage rail and road haulage contracts, stockpile management, and port scheduling for partners who need predictable delivery windows.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="hero-media">
         <picture>
           <img src="../assets/scenery.jpg"
-               srcset="../assets/scenery.jpg,
-                       ../assets/scenery.jpg,
-                       ../assets/scenery.jpg"
+               srcset="../assets/scenery.jpg, ../assets/scenery.jpg, ../assets/scenery.jpg"
                sizes="(min-width: 900px) 480px, 90vw"
                alt="Former mine site restored to natural grassland and woodland"
                width="1280" height="960" loading="lazy">
@@ -107,17 +131,17 @@
     </div>
   </section>
 
-  <!-- ============ CTA ============ -->
+  <!-- CTA -->
   <section class="cta">
     <div class="wrap">
       <div class="eyebrow">Get started</div>
       <h2>Tell us about your site.</h2>
       <p class="lede">Send basic details and our operations team will follow up with a scoped proposal.</p>
-      <a href="contact.html" class="btn btn-primary">Request a proposal</a>
+      <a href="./Contact.html" class="btn btn-primary">Request a proposal</a>
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <div>© 2026 Excavate. All rights reserved.</div>
