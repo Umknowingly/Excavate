@@ -40,6 +40,15 @@ folder with any static server e.g. the VS Code "Live Server" extension.
 
 ## Changelog
 
+### v1.2.0 — Part 3 JavaScript Enhancements & SEO
+- **Added** `interactivity.js` for advanced client-side functionality.
+- **Added** AJAX form simulation and comprehensive client-side validation (email regex, required fields) to `contact.html`.
+- **Added** dynamic search and filtering by region to `projects.html`.
+- **Added** an interactive image lightbox gallery to `projects.html`.
+- **Added** an interactive accordion component to `services.html`.
+- **SEO:** Added Meta Keywords and optimized image alt tags across all pages.
+- **Fixed:** Updated HTML forms to include proper `required` attributes and `type="tel"` for phone numbers.
+
 ### v1.1.0 — Part 2 CSS styling & responsive design
 - **Added** `styles.css`, a single external stylesheet linked from every page,
   built around a small set of CSS custom properties (colour, type, spacing).
