@@ -23,15 +23,9 @@
   --space-4: 40px;
   --space-5: 64px;
   --space-6: 96px;
-  --radius: 2px; /* deliberately small — this brand favours cut edges over rounded cards */
+  --radius: 2px; 
 }
 
-/* -------------------------------------------------------------
-   2. RESET
-   A light reset rather than a full normalize — keeps sensible
-   defaults where they already help (list markers on nav are
-   removed in the nav rule itself, not globally).
-   ------------------------------------------------------------- */
 *,
 *::before,
 *::after {
